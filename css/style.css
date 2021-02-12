@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../images/Wave-100s-1366px\ \(2\).svg);
+    background-size: cover;
+    background-position:center center ;
+}
+.text-color{
+    color: #653383;
+}
+.bg-color{
+    background-color: #653383;
+}
+.form-check{
+    padding: 0;
+}
+.my-alert{
+    background-color: #f8d7da;
+}
+#quiz, #incorrect,#correct,#quiz-alert,#finish{
+    display: none;
+} 

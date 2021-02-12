@@ -1,0 +1,150 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="icon" type="iamges/x-icon" href="images/alphabet-a.png">
+
+
+</head>
+
+<body class="py-5">
+
+    <!------------------------Starting with the setting section ----------------------------->
+    <section id="setting">
+        <div class="container">
+            <div class="Mycard bg-white rounded w-75 m-auto ">
+                <h1 class="text-center py-5 border-bottom text-color">Setting your Quiz</h1>
+
+                <div class="form-group p-3">
+                    <h5 for="options" class="text-color py-2">Category</h5>
+                    <select name="options" id="options" class="form-control">
+                        <option value="">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Entertainment:Books</option>
+                        <option value="11">Entertainment:Film</option>
+                        <option value="12">Entertainment:Music</option>
+                        <option value="13">Entertainment: Musicals & Theatres</option>
+                        <option value="14">Entertainment: Television</option>
+                        <option value="15">Entertainment: Video Games</option>
+                        <option value="16">Entertainment: Board Games</option>
+                        <option value="17">Science & Nature</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                        <option value="28">Vehicles</option>
+                        <option value="29">Entertainment: Comics</option>
+                        <option value="30">Science: Gadgets</option>
+                        <option value="31">Entertainment: Japanese Anime & Manga</option>
+                        <option value="32">Entertainment: Cartoon & Animations</option>
+
+                    </select>
+
+                </div>
+                <div class="form-check px-3 py-3">
+                    <h5 class="text-color">Difficulty</h5>
+                    <label class="form-check-label d-block px-3">
+                        <input type="radio" class="form-check-input" name="difficulty" id="" value="easy" checked>
+                        Easy
+                    </label>
+                    <label class="form-check-label d-block px-3">
+                        <input type="radio" class="form-check-input" name="difficulty" id="" value="medium">
+                        Medium
+                    </label>
+                    <label class="form-check-label d-block px-3">
+                        <input type="radio" class="form-check-input" name="difficulty" id="" value="hard">
+                        Hard
+                    </label>
+                </div>
+                <div class="form-group px-3 pb-5">
+                    <input type="number" id="number" placeholder="Number of questions" class="form-control">
+                </div>
+                <button id="startBtn"
+                    class="btn bg-color px-3 py-2 float-right text-white mr-3 mb-3 rounded-pill">Start</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------second the Quiz section ----------------------------->
+    <section id="quiz">
+        <div class="container">
+            <div class="Mycard bg-white rounded w-75 m-auto">
+                <div class="header border-bottom">
+                    <h1 class="text-center py-5  text-color"> Quiz</h1>
+
+                    <span id="incorrect" class="bg-danger p-2 ml-2 mb-3 text-white rounded ">Incorrect</span>
+                    <span id="correct" class="bg-success p-2 ml-2 mb-3 text-white rounded ">correct</span>
+                    <h6 class="bg-color p-2 text-white rounded-pill mb-3 mr-2 float-right"><span id="quest-no"></span>
+                        of
+                        <span id="total-amount"></span> Question
+                    </h6>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="body py-5">
+                    <h5 class="text-color px-4 py-3">Q: <span id="question"></span> </h5>
+                    <div id="answer" class="form-check px-5">
+                        <!--                         <label class="form-check-label d-block">
+                            <input type="radio" class="form-check-input" name="answers" id="" value="checkedValue">
+                            Display value
+                        </label>
+                        -->
+
+                    </div>
+                    <div id="quiz-alert" class="my-alert my-3 mx-3 rounded text-white text-danger py-2 px-4 ">
+                        <p class="my-1">Please Choose Your Answer</p>
+                    </div>
+                </div>
+
+
+
+
+                <button id="nextBtn"
+                    class="btn bg-color px-3 py-2 float-right text-white mr-3 mb-3 rounded-pill">submit</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------third the last  section ----------------------------->
+
+    <section id="finish">
+        <div class="container text-center">
+            <div class="Mycard bg-white rounded w-75 m-auto ">
+                <h1 class=" py-5 border-bottom text-color">Finish</h1>
+
+                <h6 class="text-color pt-3">Score:</h6>
+                <h6 id="result" class="text-color"></h6>
+
+                <button id="tryAgain" class="btn bg-color px-3 py-2 float-right text-white mr-3 mb-3 rounded-pill">Try
+                    again?</button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
